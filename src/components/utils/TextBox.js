@@ -27,15 +27,10 @@ class TextBox extends Component{
     
   }
   renderTime(){
-    var hours = this.props.hours;
-    if (this.props.hours > 12){
-      hours =  this.props.hours % 12
-      this.setState({AmPm: "pm"})
-    }
     return (
       <View style = {{flex: 1, flexDirection: "row", width: "100%"}}>
         <Text style = {styles.textFooterStyle}>
-          {this.props.hours}:{this.props.min} {this.state.AmPm}
+          {this.props.hours}:{this.props.min}
         </Text>
         <View style = {{marginLeft: 4}}>
           {this.renderIcon()}        
@@ -59,7 +54,7 @@ class TextBox extends Component{
             </View>
         </View>
       );
-    else if (this.props.type == "image")
+    else if (this.props.type = "image")
       return (
         <View style = {styles.boxStyle}>
             <View style = {styles.textViewStyle}>
