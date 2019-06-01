@@ -59,7 +59,7 @@ class TextBox extends Component{
             </View>
         </View>
       );
-    else if (this.props.type = "image")
+    else if (this.props.type == "image")
       return (
         <View style = {styles.boxStyle}>
             <View style = {styles.textViewStyle}>

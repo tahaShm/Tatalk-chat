@@ -48,11 +48,11 @@ class ChatArea extends Component{
       var size = this.props.messages.length
       for (i = 0 ; i < size ; i++){
         if (this.props.messages[i].type == "text")
-          allMessages.push(<TextBox context = {this.props.messages[i].message} image = "" type = "text" hours = {this.props.messages[i].hours} min = {this.props.messages[i].min} key = {i}/>)
+          allMessages.push(<TextBox context = {this.props.messages[i].message} image = "" type = "text" hours = {this.props.messages[i].hours} min = {this.props.messages[i].min} />)
         else if (this.props.messages[i].type == "image")
-        allMessages.push(<TextBox context = "" image = {this.props.messages[i].image} type = "image"  hours = {this.props.messages[i].hours} min = {this.props.messages[i].min} key = {i}/>)
+        allMessages.push(<TextBox context = "" image = {this.props.messages[i].image} type = "image"  hours = {this.props.messages[i].hours} min = {this.props.messages[i].min}/>)
         else if (this.props.messages[i].type == "reply")
-          allMessages.push(<ReplyBox context = {this.props.messages[i].message}  hours = {this.props.messages[i].hours} min = {this.props.messages[i].min} key = {i}/>)  
+          allMessages.push(<ReplyBox context = {this.props.messages[i].message}  hours = {this.props.messages[i].hours} min = {this.props.messages[i].min}/>)  
 
       }
       this.goDown()

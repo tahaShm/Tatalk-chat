@@ -95,7 +95,7 @@ class SendBar extends Component {
       )
     else
       return (
-        <View style = {styles.emptySend} onPress = {this.props.send}>
+        <View style = {styles.emptySend}>
           <Icon name = "arrowup" type = "AntDesign" style = {styles.iconStyle} />
         </View>
       )
